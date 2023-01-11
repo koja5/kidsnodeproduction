@@ -50,8 +50,6 @@
     "controlPanelChartInvoiceForCurrentMonthByInstallments": "Uplate za tekući mesec(izraženo u dinarima)",
     "controlPanelChartPlaceholderChildrenAbsent": "Broj odsutne dece po grupama",
     "controlPanelChartChildrenAbsentToday": "Broj odsutne dece po grupama(danas)",
-<<<<<<< HEAD
-=======
     "basicInformation": "Osnovne informacije",
     "parents": "Roditelji",
     "personForTakeChildren": "Osobe za preuzimanje deteta",
@@ -62,7 +60,6 @@
     "notes": "Napomene",
     "settings": "Podešavanja",
     "logout": "Odjavi se",
->>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
     "welcomeTitle": "Dobrodošli nazad!",
     "changeForgotPasswordForm": "Forma za promenu lozinke",
     "noHaveAccount": "Nemate još uvek nalog?",
@@ -85,24 +82,15 @@
     "welcomeCoverTitle": "Dobrodošli na KinsNode!",
     "welcomeCoverText": "KidsNode je sistem za upravljanje poslovnim procesima vrtica i obrazovnih ustanova!",
     "kindergardenGroupName": "Ime upisne grupe",
-<<<<<<< HEAD
-=======
     "kindergardenName": "Ime vrtića",
     "kindergardenEmail": "Email vrtića",
     "pib": "PIB",
->>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
     "saveKindergardenGroup": "Sačuvaj",
     "kindergardenSubgroupName": "Ime grupe u vrticu",
     "firstname": "Ime",
     "lastname": "Prezime",
     "creationDate": "Datum kreiranja",
     "telephone": "Telefon",
-<<<<<<< HEAD
-    "email": "Email adresa",
-    "birthday": "Datum rodjenja",
-    "birthdayPlace": "Mesto rodjenja",
-    "gender": "Pol",
-=======
     "telephoneFax": "Telefon/Fax",
     "email": "Email adresa",
     "website": "Websajt",
@@ -114,7 +102,6 @@
     "address": "Adresa",
     "city": "Gred",
     "zipCode": "Postanski broj",
->>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
     "motherFirstname": "Ime majke",
     "fatherFirstname": "Ime oca",
     "placeOfLiving": "Mesto stanovanja",
@@ -157,11 +144,8 @@
     "director": "Direktor",
     "educator": "Vaspitač",
     "finance": "Finansije",
-<<<<<<< HEAD
-=======
     "financeText": "Broj ziro racuna vrtića na kome stizati uplate",
     "accountNumber": "Broj žiro računa vrtića",
->>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
     "speech_therapist": "Logoped",
     "pedagogue": "Pedagog",
     "psychologist": "Psiholog",
@@ -205,9 +189,6 @@
     "profileImage": "Profilna slika",
     "profileImageText": "Profilna slika vrtića se koristi u fakturama, izveštajima...",
     "needToInputRequiredFields": "Potrebno je da popunite neophodna polja!",
-<<<<<<< HEAD
-    "successfullySendMessageRequest": "Uspešno ste poslali upit!"
-=======
     "successfullySendMessageRequest": "Uspešno ste poslali upit!",
     "childrenData": "Podaci o detetu",
     "pleaseInsertChildrenData": "Molimo unesite neke osnovne podatke o detetu",
@@ -260,5 +241,4 @@
     "currentLanguage": "Trenutna lozinka",
     "newLanguage": "Nova lozinka",
     "repetNewLanguage": "Ponovi novu lozinku"
->>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
 }

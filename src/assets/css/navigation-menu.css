@@ -431,22 +431,22 @@ body[data-sidebar="dark"] .logo-light {
   font-weight: 600;
 }
 .mm-active {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 .mm-active > a {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 .mm-active > a i {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 .mm-active .active {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 .mm-active .active i {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 .mm-active > i {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 @media (max-width: 992px) {
   .vertical-menu {
@@ -829,7 +829,7 @@ body[data-sidebar="colored"].vertical-collpsed
   ul
   li.mm-active
   .active {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 body[data-sidebar="colored"].vertical-collpsed
   .vertical-menu
@@ -848,7 +848,7 @@ body[data-sidebar="colored"].vertical-collpsed
   li
   ul.sub-menu
   li.mm-active {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 body[data-sidebar="colored"].vertical-collpsed
   .vertical-menu
@@ -858,7 +858,7 @@ body[data-sidebar="colored"].vertical-collpsed
   ul.sub-menu
   li.mm-active
   > a {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 body[data-sidebar="colored"].vertical-collpsed
   .vertical-menu
@@ -869,7 +869,7 @@ body[data-sidebar="colored"].vertical-collpsed
   li.mm-active
   > a
   i {
-  color: #2b4a77 !important;
+  color: #0066f9 !important;
 }
 .topnav {
   background: #fff;

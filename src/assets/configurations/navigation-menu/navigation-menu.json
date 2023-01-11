@@ -21,8 +21,6 @@
       "superadmin",
       "owner",
       "director",
-      "educator",
-      "parent",
       "speech_therapist",
       "pedagogue",
       "psychologist",
@@ -33,6 +31,31 @@
         "icon": "child_care",
         "title": "navigationMenuAllChildren",
         "link": "/dashboard/children/all-childrens"
+      },
+      {
+        "icon": "assignment_turned_in",
+        "title": "navigationMenuEvidenceChildrenAriival",
+        "link": "/dashboard/children/records-of-arrivals",
+        "rights": ""
+      },
+      {
+        "icon": "event",
+        "title": "navigationMenuCalendarOfActivity",
+        "link": "/dashboard/children/calendar-of-children-activity",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleChildren",
+    "rights": [
+      "educator"
+    ],
+    "menu": [
+      {
+        "icon": "child_care",
+        "title": "navigationMenuAllChildren",
+        "link": "/dashboard/children/childrens-per-group"
       },
       {
         "icon": "assignment_turned_in",

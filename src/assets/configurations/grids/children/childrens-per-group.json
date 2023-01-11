@@ -3,7 +3,7 @@
   "width": "50%",
   "request": {
     "type": "GET",
-    "api": "/api/getChildrens",
+    "api": "/api/getChildrensPerGroup",
     "parameters": [],
     "fields": "",
     "root": ""
