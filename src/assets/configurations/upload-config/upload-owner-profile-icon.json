@@ -1,0 +1,5 @@
+{
+    "saveUrl": "http://localhost:3001/api/upload/uploadOwnerLogo",
+    "requiredBaseData": true,
+    "autoUpload": false
+}

@@ -1,0 +1,88 @@
+{
+    "class": "margin-auto width-60",
+    "actionButtons": {
+        "class": "text-right p-3",
+        "simpleButtons": [],
+        "dropDownButtons": {
+            "content": "Opcije",
+            "items": [
+                {
+                    "text": "Uredi",
+                    "id": "edit",
+                    "iconCss": "ddb-icons e-edit"
+                }
+            ]
+        },
+        "splitButtons": {
+            "content": "",
+            "items": []
+        }
+    },
+    "request": {
+        "type": "GET",
+        "api": "/api/getPersonalize/",
+        "url": [],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createPersonalize",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updatePersonalize",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "config": [
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "Promenite lozinku"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "radio",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "orientation",
+            "title": "orientation",
+            "field": "orientation",
+            "itemFields": [
+                {
+                    "title": "Horizontalni",
+                    "value": "horizontal"
+                },
+                {
+                    "title": "Vertikalni",
+                    "value": "vertical"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "e-info  button-action",
+            "name": "submit",
+            "title": "saveButton",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

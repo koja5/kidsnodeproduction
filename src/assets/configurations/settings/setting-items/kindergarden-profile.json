@@ -1,0 +1,195 @@
+{
+    "class": "margin-auto width-60",
+    "actionButtons": {
+        "class": "text-right p-3",
+        "simpleButtons": [],
+        "dropDownButtons": {
+            "content": "Opcije",
+            "items": [
+                {
+                    "text": "Uredi",
+                    "id": "edit",
+                    "iconCss": "ddb-icons e-edit"
+                }
+            ]
+        },
+        "splitButtons": {
+            "content": "",
+            "items": []
+        },
+        "rights": [
+            "owner",
+            "director"
+        ]
+    },
+    "request": {
+        "type": "GET",
+        "api": "/api/getKindergardenInfo/",
+        "url": [],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createKindergardenInfo",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateKindergardenInfo",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "config": [
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "kindergardenData",
+            "text": "pleaseInsertKindergardenData"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "name",
+            "title": "kindergardenName",
+            "field": "name"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "address",
+            "title": "address",
+            "field": "address"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "city",
+            "title": "city",
+            "field": "city"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "zip_code",
+            "title": "zipCode",
+            "field": "zip_code"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "telephone",
+            "title": "Telefon",
+            "field": "telephone"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "email",
+            "title": "email",
+            "field": "email"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "pib",
+            "title": "pib",
+            "field": "pib"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "contactPerson",
+            "text": "contactPersonText"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_firstname",
+            "title": "firstname",
+            "field": "contact_person_firstname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_lastname",
+            "title": "lastname",
+            "field": "contact_person_lastname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "contact_person_address",
+            "title": "address",
+            "field": "contact_person_address"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_telephone",
+            "title": "telefon",
+            "field": "contact_person_telephone"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_email",
+            "title": "email",
+            "field": "contact_person_email"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "finance",
+            "text": "financeText"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "account_number",
+            "title": "accountNumber",
+            "field": "account_number"
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "e-info  button-action",
+            "name": "submit",
+            "title": "saveButton",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12",
+            "rights": [
+                "owner",
+                "director"
+            ]
+        }
+    ]
+}

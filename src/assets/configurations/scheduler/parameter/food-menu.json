@@ -1,0 +1,135 @@
+{
+  "request": {
+    "type": "GET",
+    "api": "/api/getFoodMenu",
+    "parameters": [],
+    "fields": "",
+    "root": ""
+  },
+  "resources": {
+    "request": {
+      "type": "GET",
+      "api": "/api/getTypeOfMeal",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "field": "type_of_meal_id",
+    "idField": "id",
+    "colorField": "color",
+    "allowMultipleOwner": true
+  },
+  "editSettingsRequest": {
+    "add": {
+      "type": "POST",
+      "api": "/api/createFoodMenu",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "edit": {
+      "type": "POST",
+      "api": "/api/updateFoodMenu",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "delete": {
+      "type": "POST",
+      "api": "/api/deleteFoodMenu",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    }
+  },
+  "views": [
+    "WorkWeek",
+    "Day",
+    "Week",
+    "Month"
+  ],
+  "showQuickInfo": true,
+  "startHour": "08:00",
+  "endHour": "19:00",
+  "interval": 30,
+  "toolbar": {
+    "exportToExcel": true,
+    "print": true
+  },
+  "convertSubmitValue": [
+    {
+      "field": "type_of_meal_id",
+      "type": "number"
+    }
+  ],
+  "config": [
+    {
+      "type": "combobox",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "name": "type_of_meal_id",
+      "title": "meal",
+      "field": {
+        "text": "name",
+        "value": "id"
+      },
+      "request": {
+        "type": "GET",
+        "api": "/api/getTypeOfMeal",
+        "fields": "",
+        "root": ""
+      },
+      "placeholder": "Please select kindergarden group",
+      "fieldConfig": {
+        "ignoreAccent": false,
+        "filter": true
+      },
+      "required": true,
+      "schedule": true
+    },
+    {
+      "type": "multiselect",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "name": "type_of_food",
+      "title": "dish",
+      "field": {
+        "text": "name",
+        "value": "id"
+      },
+      "request": {
+        "type": "GET",
+        "api": "/api/getFoods",
+        "fields": "",
+        "root": ""
+      },
+      "placeholder": "Please select kindergarden group",
+      "fieldConfig": {
+        "ignoreAccent": false,
+        "filter": true
+      },
+      "required": true,
+      "schedule": true
+    },
+    {
+      "type": "datetimepicker",
+      "title": "start",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "name": "StartTime",
+      "schedule": true
+    },
+    {
+      "type": "datetimepicker",
+      "title": "end",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "name": "EndTime",
+      "schedule": true
+    }
+  ]
+}

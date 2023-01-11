@@ -1,0 +1,112 @@
+{
+    "actionButtons": {
+        "class": "text-right pr-3 pl-3 pt-3 pb-0",
+        "simpleButtons": [],
+        "dropDownButtons": {
+            "content": "Opcije",
+            "items": [
+                {
+                    "text": "Uredi",
+                    "id": "edit",
+                    "iconCss": "ddb-icons e-edit"
+                }
+            ]
+        },
+        "splitButtons": {
+            "content": "",
+            "items": []
+        }
+    },
+    "request": {
+        "type": "GET",
+        "api": "/api/getMedicalRecordHealthCard/",
+        "url": [
+            "id"
+        ],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createMedicalRecordHealthCard",
+            "url": [
+                "id"
+            ],
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateMedicalRecordHealthCard",
+            "url": [
+                "id"
+            ],
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "config": [
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "health_card_id",
+            "title": "Broj zdravstvene knjižice",
+            "field": "health_card_id"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "registration_number",
+            "title": "Registarski broj",
+            "field": "registration_number"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "identification_number",
+            "title": "Matični broj",
+            "field": "identification_number"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "lbo_parent",
+            "title": "LBO osiguranika",
+            "field": "lbo_parent"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "lbo_children",
+            "title": "LBO deteta",
+            "field": "lbo_children"
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "button-action e-info",
+            "name": "submit",
+            "title": "Sacuvaj",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

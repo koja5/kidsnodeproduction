@@ -1,0 +1,9 @@
+{
+    "saveUrl": "http://localhost:3001/api/upload/saveEmployeeDocument",
+    "removeUrl": "http://localhost:3001/api/upload/deleteEmployeeDocument",
+    "requiredBaseData": true,
+    "autoUpload": false,
+    "url": [
+        "id"
+    ]
+}

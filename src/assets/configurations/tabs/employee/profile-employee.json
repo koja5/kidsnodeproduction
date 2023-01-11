@@ -1,0 +1,28 @@
+[
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>info</mat-icon> Osnovne informacije</div>",
+      "class": "e-fill",
+      "headerStyle": "e-fill"
+    },
+    "type": "forms",
+    "path": "/forms/employee",
+    "file": "basic-information.json"
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>import_contacts</mat-icon> Dnevnik rada</div>"
+    },
+    "type": "scheduler",
+    "path": "/scheduler/employee",
+    "file": "profile-employee-work-diary.json"
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>description</mat-icon> Dokumentacija</div>"
+    },
+    "type": "grid",
+    "path": "/grids/employee/profile-employee",
+    "file": "documents.json"
+  }
+]

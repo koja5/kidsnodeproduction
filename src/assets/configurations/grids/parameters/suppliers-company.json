@@ -1,0 +1,240 @@
+{
+  "pageSize": 10,
+  "width": "50%",
+  "request": {
+    "type": "GET",
+    "api": "/api/getSuppliersCompany",
+    "parameters": [],
+    "fields": "",
+    "root": ""
+  },
+  "paging": {
+    "enable": true,
+    "settings": {
+      "pageSize": 10
+    }
+  },
+  "sorting": {
+    "enable": true
+  },
+  "grouping": {
+    "enable": true,
+    "group": []
+  },
+  "filtering": {
+    "enable": false
+  },
+  "customGrouping": false,
+  "allowResizing": true,
+  "reorderable": true,
+  "selectable": true,
+  "scrollable": false,
+  "hideable": true,
+  "refresh": false,
+  "reset": true,
+  "contextMenuItems": [
+    "AutoFit",
+    "AutoFitAll",
+    "SortAscending",
+    "SortDescending",
+    "Copy",
+    "Edit",
+    "Delete",
+    "Save",
+    "Cancel",
+    "FirstPage",
+    "PrevPage",
+    "LastPage",
+    "NextPage",
+    "Group",
+    "Ungroup"
+  ],
+  "toolbar": [
+    "Add",
+    "Edit",
+    "Delete",
+    "Print",
+    "Search"
+  ],
+  "editSettings": {
+    "allowEditing": true,
+    "allowAdding": true,
+    "allowDeleting": true,
+    "showDeleteConfirmDialog": true,
+    "mode": "Dialog"
+  },
+  "editSettingsRequest": {
+    "add": {
+      "type": "POST",
+      "api": "/api/createSupplierCompany",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "edit": {
+      "type": "POST",
+      "api": "/api/updateSupplierCompany",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "delete": {
+      "type": "POST",
+      "api": "/api/deleteSupplierCompany",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    }
+  },
+  "columns": [
+    {
+      "title": "ID",
+      "width": 70,
+      "filterable": true,
+      "hideable": true,
+      "filter": "date",
+      "type": "number",
+      "class": "text-align-right",
+      "field": "id",
+      "isPrimaryKey": true,
+      "allowEditing": false
+    },
+    {
+      "title": "name",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "name"
+    },
+    {
+      "title": "Tip kompanije",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "type_of_company"
+    },
+    {
+      "title": "contactPerson",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "contact_person"
+    },
+    {
+      "title": "telephone",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "telephone"
+    },
+    {
+      "title": "telephoneFax",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "fax"
+    },
+    {
+      "title": "email",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "email"
+    },
+    {
+      "title": "website",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "website"
+    }
+  ],
+  "config": [
+    {
+      "type": "label",
+      "width": "col-md-12",
+      "title": "companySupplier",
+      "text": "pleaseInsertSupplierData"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-12 hide",
+      "class": "e-outline hide",
+      "name": "id",
+      "title": "ID",
+      "field": "id"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "name",
+      "title": "name",
+      "field": "name"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "type_of_company",
+      "title": "typeOfCompany",
+      "field": "type_of_company"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "contact_person",
+      "title": "contactPerson",
+      "field": "contact_person"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "telephone",
+      "title": "Telefon",
+      "field": "telephone"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-4",
+      "class": "e-outline",
+      "name": "fax",
+      "title": "telephoneFax",
+      "field": "fax"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-4",
+      "class": "e-outline",
+      "name": "email",
+      "title": "email",
+      "field": "email"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-4",
+      "class": "e-outline",
+      "name": "website",
+      "title": "website",
+      "field": "website"
+    },
+    {
+      "type": "button",
+      "width": "col-md-12",
+      "class": "e-info button-action",
+      "name": "submit",
+      "title": "saveButton",
+      "field": "submit",
+      "positionClass": "position-end mt-3 col-md-12"
+    }
+  ]
+}

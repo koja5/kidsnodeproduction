@@ -1,0 +1,20 @@
+[
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>local_atm</mat-icon> Fakture</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/invoices",
+        "file": "children-invoices.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>credit_score</mat-icon> Arhiva faktura</div>"
+        },
+        "type": "grid",
+        "path": "/grids/invoices",
+        "file": "children-invoices-old.json"
+    }
+]

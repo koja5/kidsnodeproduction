@@ -1,0 +1,313 @@
+{
+    "pageSize": 10,
+    "width": "30%",
+    "request": {
+        "type": "GET",
+        "api": "/api/getInvoiceChildren",
+        "url": [],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "paging": {
+        "enable": true,
+        "settings": {
+            "pageSize": 10
+        }
+    },
+    "sorting": {
+        "enable": true
+    },
+    "grouping": {
+        "enable": true,
+        "group": []
+    },
+    "filtering": {
+        "enable": false
+    },
+    "customGrouping": false,
+    "allowResizing": true,
+    "reorderable": true,
+    "selectable": true,
+    "scrollable": false,
+    "hideable": true,
+    "refresh": false,
+    "reset": true,
+    "contextMenuItems": [
+        "AutoFit",
+        "AutoFitAll",
+        "SortAscending",
+        "SortDescending",
+        "Copy",
+        "Edit",
+        "Save",
+        "Cancel",
+        "FirstPage",
+        "PrevPage",
+        "LastPage",
+        "NextPage",
+        "Group",
+        "Ungroup"
+    ],
+    "toolbar": [
+        "Edit",
+        "Print",
+        "Search"
+    ],
+    "editSettings": {
+        "allowEditing": true,
+        "allowAdding": false,
+        "allowDeleting": false,
+        "showDeleteConfirmDialog": true,
+        "mode": "Dialog"
+    },
+    "editSettingsRequest": {
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateInvoiceChildrenPayment",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "columns": [
+        {
+            "title": "ID",
+            "width": 70,
+            "filterable": true,
+            "hideable": true,
+            "filter": "date",
+            "type": "number",
+            "class": "text-align-right",
+            "field": "id",
+            "isPrimaryKey": true,
+            "allowEditing": false
+        },
+        {
+            "title": "creationDate",
+            "filterable": true,
+            "hideable": true,
+            "type": "date",
+            "format": "dd.MM.yyyy",
+            "class": "text-align-right",
+            "field": "creation_date",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "firstname",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "firstname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "lastname",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "lastname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "status",
+            "template": {
+                "choices": [
+                    {
+                        "field": "payment_status",
+                        "value": 1,
+                        "operator": "==",
+                        "html": "<span class='label-success'>Plaćeno</span>"
+                    },
+                    {
+                        "field": "payment_status",
+                        "value": 2,
+                        "operator": "==",
+                        "html": "<span class='label-error'>Nije plaćeno</span>"
+                    }
+                ]
+            },
+            "field": "paymeny_status"
+        },
+        {
+            "title": "paymentDate",
+            "filterable": true,
+            "hideable": true,
+            "type": "date",
+            "format": "dd.MM.yyyy",
+            "class": "text-align-right",
+            "field": "payment_date",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "type": "button",
+            "title": "",
+            "filterable": true,
+            "hideable": true,
+            "class": "text-align-right",
+            "field": "description",
+            "template": {
+                "type": "dropdownbutton",
+                "content": "Opcije",
+                "items": [
+                    {
+                        "text": "Pregledaj fakturu",
+                        "id": "open"
+                    },
+                    {
+                        "text": "Štampaj fakturu",
+                        "id": "print"
+                    },
+                    {
+                        "text": "Preuzmi fakturu",
+                        "id": "download"
+                    },
+                    {
+                        "separator": true
+                    },
+                    {
+                        "text": "Pošalji podsetnik za plaćanje",
+                        "id": "sendReminder"
+                    }
+                ],
+                "itemsRequest": {
+                    "sendReminder": {
+                        "type": "POST",
+                        "api": "/api/sendManualInvoiceChildren",
+                        "parameters": [],
+                        "fields": "",
+                        "root": ""
+                    }
+                },
+                "fields": {
+                    "open": [
+                        {
+                            "key": "customerName",
+                            "value": "name"
+                        },
+                        {
+                            "key": "address",
+                            "value": ""
+                        },
+                        {
+                            "key": "contactNo",
+                            "value": ""
+                        },
+                        {
+                            "key": "email",
+                            "value": ""
+                        },
+                        {
+                            "key": "phone",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "config": [
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "creation_date",
+            "title": "creationDate",
+            "field": "creation_date",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "father_name",
+            "title": "fatherFirstname",
+            "field": "father_name"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "name",
+            "title": "kindergardenName",
+            "field": "name"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "kindergarden_email",
+            "title": "kindergardenEmail",
+            "field": "kindergarden_email"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "firstname",
+            "title": "childrenFirstname",
+            "field": "firstname",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "lastname",
+            "title": "childrenLastname",
+            "field": "lastname",
+            "readonly": true
+        },
+        {
+            "type": "combobox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "payment_status",
+            "title": "paymentStatus",
+            "field": {
+                "text": "name",
+                "value": "id"
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getPaymentStatus",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "fieldConfig": {
+                "ignoreAccent": false,
+                "filter": true
+            },
+            "required": true
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "button-action e-info",
+            "name": "submit",
+            "title": "saveButton",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

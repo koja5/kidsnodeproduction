@@ -1,0 +1,240 @@
+[
+  {
+    "title": "navigationMenuTitleStatistic",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "parent"
+    ],
+    "menu": [
+      {
+        "icon": "admin_panel_settings",
+        "title": "navigationMenuControlPanel",
+        "link": "/dashboard/control-panel/owner"
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleChildren",
+    "rights": [
+      "superadmin",
+      "owner",
+      "director",
+      "educator",
+      "parent",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ],
+    "menu": [
+      {
+        "icon": "child_care",
+        "title": "navigationMenuAllChildren",
+        "link": "/dashboard/children/all-childrens"
+      },
+      {
+        "icon": "assignment_turned_in",
+        "title": "navigationMenuEvidenceChildrenAriival",
+        "link": "/dashboard/children/records-of-arrivals",
+        "rights": ""
+      },
+      {
+        "icon": "event",
+        "title": "navigationMenuCalendarOfActivity",
+        "link": "/dashboard/children/calendar-of-children-activity",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleOrganization",
+    "rights": [
+      "superadmin",
+      "owner",
+      "director",
+      "finance"
+    ],
+    "menu": [
+      {
+        "icon": "badge",
+        "title": "navigationMenuEmployee",
+        "link": "/dashboard/employee/all-employees",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleFinance",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "finance"
+    ],
+    "menu": [
+      {
+        "icon": "paid",
+        "title": "navigationMenuInvoices",
+        "link": "/dashboard/invoices/children-invoices",
+        "rights": ""
+      },
+      {
+        "icon": "receipt",
+        "title": "navigationMenuGenerateInvoice",
+        "link": "/dashboard/invoices/invoice-form",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleEmployee",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "finance"
+    ],
+    "menu": [
+      {
+        "icon": "import_contacts",
+        "title": "navigationMenuWorkDiary",
+        "link": "/dashboard/employee/work-diary",
+        "rights": ""
+      },
+      {
+        "icon": "event_note",
+        "title": "navigationMenuAttendanceRecords",
+        "link": "/dashboard/employee/reporting-presence",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleServices",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ],
+    "menu": [
+      {
+        "icon": "monitor_heart",
+        "title": "navigationMenuHealthService",
+        "link": "/dashboard/services/health"
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleFood",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ],
+    "menu": [
+      {
+        "icon": "restaurant",
+        "title": "navigationMenuFood",
+        "link": "",
+        "rights": "",
+        "children": [
+          {
+            "icon": "work",
+            "title": "navigationMenuDishes",
+            "link": "/dashboard/parameters/food",
+            "rights": ""
+          },
+          {
+            "icon": "receipt_long",
+            "title": "navigationMenuFoodMenu",
+            "link": "/dashboard/parameters/food-menu",
+            "rights": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "navigationMenuTitleAdministration",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner"
+    ],
+    "menu": [
+      {
+        "icon": "work",
+        "title": "navigationMenuWork",
+        "link": "",
+        "rights": "",
+        "children": [
+          {
+            "icon": "work",
+            "title": "navigationMenuWorkPlaces",
+            "link": "/dashboard/parameters/work-places",
+            "rights": ""
+          },
+          {
+            "icon": "receipt_long",
+            "title": "navigationMenuTypesOfWork",
+            "link": "/dashboard/parameters/type-of-work",
+            "rights": ""
+          },
+          {
+            "icon": "receipt_long",
+            "title": "navigationMenuGeneralContracts",
+            "link": "/dashboard/parameters/general-contracts",
+            "rights": ""
+          }
+        ]
+      },
+      {
+        "icon": "local_shipping",
+        "title": "navigationMenuSuppliers",
+        "link": "",
+        "rights": "",
+        "children": [
+          {
+            "title": "navigationMenuAllSuppliers",
+            "link": "/dashboard/parameters/suppliers-company",
+            "rights": ""
+          },
+          {
+            "title": "navigationMenuSuppliersInvoices",
+            "link": "/dashboard/parameters/invoice-suppliers",
+            "rights": ""
+          }
+        ]
+      },
+      {
+        "icon": "groups",
+        "title": "navigationMenuGroup",
+        "children": [
+          {
+            "icon": "text_snippet",
+            "title": "navigationMenuEnrollmentGroup",
+            "link": "/dashboard/children/group",
+            "rights": "",
+            "isDefault": true
+          },
+          {
+            "icon": "speaker_notes",
+            "title": "navigationMenuKindergartenGroup",
+            "link": "/dashboard/children/subgroup",
+            "rights": ""
+          }
+        ]
+      }
+    ]
+  }
+]

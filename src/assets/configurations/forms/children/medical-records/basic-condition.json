@@ -1,0 +1,128 @@
+{
+    "actionButtons": {
+        "class": "text-right pr-3 pl-3 pt-3 pb-0",
+        "simpleButtons": [],
+        "dropDownButtons": {
+            "content": "Opcije",
+            "items": [
+                {
+                    "text": "Uredi",
+                    "id": "edit",
+                    "iconCss": "ddb-icons e-edit"
+                }
+            ]
+        },
+        "splitButtons": {
+            "content": "",
+            "items": []
+        }
+    },
+    "request": {
+        "type": "GET",
+        "api": "/api/getMedicalRecordBasicCondition/",
+        "url": [
+            "id"
+        ],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createMedicalRecordBasicCondition",
+            "url": [
+                "id"
+            ],
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateMedicalRecordBasicCondition",
+            "url": [
+                "id"
+            ],
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "config": [
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "label",
+            "width": "col-md-12 pt-2",
+            "title": "Preležane bolesti",
+            "text": "Ovde možete uneti ukoliko je dete preležalo neke bolesti do sada."
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "bedridden_diseases",
+            "multiline": true,
+            "field": "bedridden_diseases"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12 pt-2",
+            "title": "Kontenitalne malformacije",
+            "text": "Ovde možete uneti kontenitalne malformacije."
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "content_malformations",
+            "multiline": true,
+            "field": "content_malformations"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12 pt-2",
+            "title": "Alergije",
+            "text": "Ovde možete uneti ukoliko dete ima neku alergiju."
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "allergies",
+            "multiline": true,
+            "field": "allergies"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12 pt-2",
+            "title": "Rizik faktor",
+            "text": "Ako postoji neki rizik faktor, možete uneti informaciju o tome."
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "risk_factor",
+            "multiline": true,
+            "field": "risk_factor"
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "button-action e-info",
+            "name": "submit",
+            "title": "Sacuvaj",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

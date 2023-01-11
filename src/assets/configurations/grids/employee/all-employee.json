@@ -1,0 +1,388 @@
+{
+  "pageSize": 10,
+  "width": "50%",
+  "request": {
+    "type": "GET",
+    "api": "/api/getEmployees",
+    "parameters": [],
+    "fields": "",
+    "root": ""
+  },
+  "paging": {
+    "enable": true,
+    "settings": {
+      "pageSize": 10
+    }
+  },
+  "sorting": {
+    "enable": true
+  },
+  "grouping": {
+    "enable": true,
+    "group": []
+  },
+  "filtering": {
+    "enable": false
+  },
+  "customGrouping": false,
+  "allowResizing": true,
+  "reorderable": true,
+  "selectable": true,
+  "scrollable": false,
+  "hideable": true,
+  "refresh": false,
+  "reset": true,
+  "contextMenuItems": [
+    "AutoFit",
+    "AutoFitAll",
+    "SortAscending",
+    "SortDescending",
+    "Copy",
+    "Edit",
+    "Delete",
+    "Save",
+    "Cancel",
+    "FirstPage",
+    "PrevPage",
+    "LastPage",
+    "NextPage",
+    "Group",
+    "Ungroup"
+  ],
+  "toolbar": [
+    "Add",
+    "Edit",
+    "Delete",
+    "Print",
+    "Search"
+  ],
+  "editSettings": {
+    "allowEditing": true,
+    "allowAdding": true,
+    "allowDeleting": true,
+    "showDeleteConfirmDialog": true,
+    "mode": "Dialog"
+  },
+  "editSettingsRequest": {
+    "add": {
+      "type": "POST",
+      "api": "/api/createEmployee",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "edit": {
+      "type": "POST",
+      "api": "/api/updateEmployee",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "delete": {
+      "type": "POST",
+      "api": "/api/deleteEmployee",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    }
+  },
+  "columns": [
+    {
+      "title": "ID",
+      "width": 70,
+      "filterable": true,
+      "hideable": true,
+      "filter": "date",
+      "type": "number",
+      "class": "text-align-right",
+      "field": "id",
+      "isPrimaryKey": true,
+      "allowEditing": false
+    },
+    {
+      "title": "firstname",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "firstname",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "lastname",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "lastname",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "birthday",
+      "filterable": true,
+      "hideable": true,
+      "type": "date",
+      "format": "dd.MM.yyyy",
+      "class": "text-align-right",
+      "field": "birthday",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "placeOfLiving",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "place_of_living",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "telephone",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "telephone",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "email",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "email",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "status",
+      "template": {
+        "choices": [
+          {
+            "field": "active",
+            "value": 1,
+            "operator": "==",
+            "html": "<span class='label-success'>Aktivan</span>"
+          },
+          {
+            "field": "active",
+            "value": 0,
+            "operator": "==",
+            "html": "<span class='label-error'>Nije aktivan</span>"
+          }
+        ]
+      },
+      "field": "active"
+    },
+    {
+      "title": "kindergardenSubgroupName",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "kindergarden_subgroup_name",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "userType",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "user_type_name",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "father_firstname",
+      "template": {
+        "type": "button",
+        "action": "open",
+        "class": "btn btn-none button-text-center button-action text-center",
+        "classIcon": "remove_red_eye",
+        "link": "dashboard/employee/profile-employee",
+        "parameters": [
+          "id"
+        ]
+      }
+    }
+  ],
+  "config": [
+    {
+      "type": "textbox",
+      "width": "col-md-12 hide",
+      "class": "e-outline",
+      "name": "id",
+      "title": "ID",
+      "field": "id",
+      "readonly": true
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "firstname",
+      "title": "firstname",
+      "field": "firstname"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "lastname",
+      "title": "lastname",
+      "field": "lastname"
+    },
+    {
+      "type": "radio",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "gender",
+      "title": "gender",
+      "field": "gender",
+      "itemFields": [
+        {
+          "title": "Muski",
+          "value": "man"
+        },
+        {
+          "title": "Zenski",
+          "value": "femaly"
+        }
+      ]
+    },
+    {
+      "type": "datepicker",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "birthday",
+      "title": "birthday",
+      "field": "birthday"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "birthday_place",
+      "title": "birthdayPlace",
+      "field": "birthday_place"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "place_of_living",
+      "title": "placeOfLiving",
+      "field": "place_of_living"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "name": "professional_qualifications",
+      "title": "professionalQualifications",
+      "field": "professional_qualifications"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "telephone",
+      "title": "telephone",
+      "field": "telephone"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "email",
+      "title": "email",
+      "field": "email"
+    },
+    {
+      "type": "combobox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "user_type_id",
+      "title": "userType",
+      "field": {
+        "text": "name",
+        "value": "id"
+      },
+      "request": {
+        "type": "GET",
+        "api": "/api/getUserOfType",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+      },
+      "fieldConfig": {
+        "ignoreAccent": false,
+        "filter": true
+      },
+      "required": true
+    },
+    {
+      "type": "combobox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "kindergarden_subgroup_id",
+      "title": "kindergardenSubgroupName",
+      "field": {
+        "text": "name",
+        "value": "id"
+      },
+      "request": {
+        "type": "GET",
+        "api": "/api/getKindergardenSubgroup",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+      },
+      "fieldConfig": {
+        "ignoreAccent": false,
+        "filter": true
+      },
+      "required": true
+    },
+    {
+      "type": "switch",
+      "width": "col-md-12 mt-3 text-center",
+      "class": "e-outline",
+      "name": "active",
+      "title": "Aktiviraj/deaktiviraj",
+      "field": "active",
+      "onLabel": "Aktivan",
+      "offLabel": "Neaktivan"
+    },
+    {
+      "type": "button",
+      "width": "col-md-12",
+      "class": "e-info button-action",
+      "name": "submit",
+      "title": "saveButton",
+      "field": "submit",
+      "positionClass": "position-end mt-3 col-md-12"
+    }
+  ]
+}

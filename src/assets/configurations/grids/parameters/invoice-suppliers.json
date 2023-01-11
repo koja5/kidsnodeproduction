@@ -1,0 +1,262 @@
+{
+    "pageSize": 10,
+    "request": {
+        "type": "GET",
+        "api": "/api/getInvoiceSupplier",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "paging": {
+        "enable": true,
+        "settings": {
+            "pageSize": 10
+        }
+    },
+    "sorting": {
+        "enable": true
+    },
+    "grouping": {
+        "enable": true,
+        "group": []
+    },
+    "filtering": {
+        "enable": false
+    },
+    "customGrouping": false,
+    "allowResizing": true,
+    "reorderable": true,
+    "selectable": true,
+    "scrollable": false,
+    "hideable": true,
+    "refresh": false,
+    "reset": true,
+    "contextMenuItems": [
+        "AutoFit",
+        "AutoFitAll",
+        "SortAscending",
+        "SortDescending",
+        "Copy",
+        "Edit",
+        "Delete",
+        "Save",
+        "Cancel",
+        "FirstPage",
+        "PrevPage",
+        "LastPage",
+        "NextPage",
+        "Group",
+        "Ungroup"
+    ],
+    "toolbar": [
+        "Add",
+        "Edit",
+        "Delete",
+        "Print",
+        "Search"
+    ],
+    "editSettings": {
+        "allowEditing": true,
+        "allowAdding": true,
+        "allowDeleting": true,
+        "showDeleteConfirmDialog": true,
+        "mode": "Dialog"
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createInvoiceSupplier",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateInvoiceSupplier",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "delete": {
+            "type": "POST",
+            "api": "/api/deleteInvoiceSupplier",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "columns": [
+        {
+            "title": "ID",
+            "width": 70,
+            "filterable": true,
+            "hideable": true,
+            "filter": "date",
+            "type": "number",
+            "class": "text-align-right",
+            "field": "id",
+            "isPrimaryKey": true,
+            "allowEditing": false
+        },
+        {
+            "title": "supplier",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "supplier_name"
+        },
+        {
+            "title": "price",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "price"
+        },
+        {
+            "title": "description",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "description"
+        },
+        {
+            "title": "status",
+            "template": {
+                "choices": [
+                    {
+                        "field": "payment_status",
+                        "value": 1,
+                        "operator": "==",
+                        "html": "<span class='label-success'>Plaćeno</span>"
+                    },
+                    {
+                        "field": "payment_status",
+                        "value": 2,
+                        "operator": "==",
+                        "html": "<span class='label-error'>Nije plaćeno</span>"
+                    }
+                ]
+            },
+            "field": "paymeny_status"
+        },
+        {
+            "type": "button",
+            "title": "",
+            "filterable": true,
+            "hideable": true,
+            "class": "text-align-right",
+            "field": "description",
+            "template": {
+                "type": "dropdownbutton",
+                "content": "Opcije",
+                "items": [
+                    {
+                        "text": "Settings",
+                        "id": "settings"
+                    },
+                    {
+                        "separator": true
+                    },
+                    {
+                        "text": "Logout",
+                        "id": 2
+                    }
+                ],
+                "itemsRequest": {
+                    "settings": {
+                        "type": "POST",
+                        "api": "/api/createInvoiceSupplier",
+                        "parameters": [],
+                        "fields": "",
+                        "root": ""
+                    }
+                }
+            }
+        }
+    ],
+    "config": [
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline hide",
+            "name": "id",
+            "title": "ID",
+            "field": "id"
+        },
+        {
+            "type": "combobox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "supplier_id",
+            "title": "supplier",
+            "field": {
+                "text": "name",
+                "value": "id"
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getSuppliersCompany",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "fieldConfig": {
+                "ignoreAccent": false,
+                "filter": true
+            },
+            "required": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "price",
+            "title": "price",
+            "field": "price"
+        },
+        {
+            "type": "textbox",
+            "multiline": true,
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "description",
+            "title": "description",
+            "field": "description"
+        },
+        {
+            "type": "combobox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "payment_status",
+            "title": "Status plaćanja",
+            "field": {
+                "text": "name",
+                "value": "id"
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getPaymentStatus",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "fieldConfig": {
+                "ignoreAccent": false,
+                "filter": true
+            },
+            "required": true
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "e-info button-action",
+            "name": "submit",
+            "title": "Sačuvaj",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

@@ -1,0 +1,248 @@
+{
+  "pageSize": 10,
+  "request": {
+    "type": "GET",
+    "api": "/api/getChildrenHealthRecord",
+    "url": [
+      "id"
+    ],
+    "parameters": [],
+    "fields": "",
+    "root": ""
+  },
+  "paging": {
+    "enable": true,
+    "settings": {
+      "pageSize": 10
+    }
+  },
+  "sorting": {
+    "enable": true
+  },
+  "grouping": {
+    "enable": true,
+    "group": []
+  },
+  "filtering": {
+    "enable": false
+  },
+  "customGrouping": false,
+  "allowResizing": true,
+  "reorderable": true,
+  "selectable": true,
+  "scrollable": false,
+  "hideable": true,
+  "refresh": false,
+  "reset": true,
+  "contextMenuItems": [
+    "AutoFit",
+    "AutoFitAll",
+    "SortAscending",
+    "SortDescending",
+    "Copy",
+    "Edit",
+    "Delete",
+    "Save",
+    "Cancel",
+    "FirstPage",
+    "PrevPage",
+    "LastPage",
+    "NextPage",
+    "Group",
+    "Ungroup"
+  ],
+  "toolbar": [
+    "Add",
+    "Edit",
+    "Delete",
+    "Print",
+    "Search"
+  ],
+  "editSettings": {
+    "allowEditing": true,
+    "allowAdding": true,
+    "allowDeleting": true,
+    "showDeleteConfirmDialog": true,
+    "mode": "Dialog"
+  },
+  "editSettingsRequest": {
+    "add": {
+      "type": "POST",
+      "api": "/api/createChildrenHealthRecord",
+      "url": [
+        "id"
+      ],
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "edit": {
+      "type": "POST",
+      "api": "/api/updateChildrenHealthRecord",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "delete": {
+      "type": "POST",
+      "api": "/api/deleteChildrenHealthRecord",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    }
+  },
+  "columns": [
+    {
+      "title": "ID",
+      "width": 70,
+      "filterable": true,
+      "hideable": true,
+      "filter": "date",
+      "type": "number",
+      "class": "text-align-right",
+      "field": "id",
+      "isPrimaryKey": true,
+      "allowEditing": false
+    },
+    {
+      "title": "Datum kreiranja",
+      "filterable": true,
+      "hideable": true,
+      "type": "date",
+      "format": "dd.MM.yyyy",
+      "class": "text-align-right",
+      "field": "creation_date",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "title": "Pocetak bolovanja",
+      "filterable": true,
+      "hideable": true,
+      "type": "date",
+      "format": "dd.MM.yyyy",
+      "class": "text-align-right",
+      "field": "start_absense"
+    },
+    {
+      "title": "Kraj bolovanja",
+      "filterable": true,
+      "hideable": true,
+      "type": "date",
+      "format": "dd.MM.yyyy",
+      "class": "text-align-right",
+      "field": "end_absense"
+    },
+    {
+      "title": "Napomena",
+      "filterable": true,
+      "hideable": true,
+      "type": "string",
+      "class": "text-align-right",
+      "field": "note",
+      "validation": {
+        "required": true
+      }
+    }
+  ],
+  "config": [
+    {
+      "type": "textbox",
+      "width": "col-md-12 hide",
+      "class": "e-outline",
+      "name": "id",
+      "title": "ID",
+      "field": "id",
+      "readonly": true
+    },
+    {
+      "type": "combobox",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "name": "type_health_records",
+      "title": "type_health_records",
+      "field": {
+        "text": "name",
+        "value": "id"
+      },
+      "request": {
+        "type": "GET",
+        "api": "",
+        "parameters": [],
+        "fields": "",
+        "root": "",
+        "localData": {
+          "path": "enums",
+          "file": "type-of-health-records.json"
+        }
+      },
+      "fieldConfig": {
+        "ignoreAccent": false,
+        "filter": true
+      },
+      "required": true
+    },
+    {
+      "type": "combobox",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "name": "disease",
+      "title": "disease",
+      "field": {
+        "text": "name",
+        "value": "id"
+      },
+      "request": {
+        "type": "GET",
+        "api": "",
+        "parameters": [],
+        "fields": "",
+        "root": "",
+        "localData": {
+          "path": "enums",
+          "file": "type-of-health-records.json"
+        }
+      },
+      "fieldConfig": {
+        "ignoreAccent": false,
+        "filter": true
+      },
+      "required": true
+    },
+    {
+      "type": "datepicker",
+      "title": "start_absense",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "name": "start_absense"
+    },
+    {
+      "type": "datepicker",
+      "title": "end_absense",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "name": "end_absense"
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "name": "note",
+      "title": "Napomena",
+      "multiline": true,
+      "field": "note"
+    },
+    {
+      "type": "button",
+      "width": "col-md-12",
+      "class": "button-action e-info",
+      "name": "submit",
+      "title": "Sacuvaj",
+      "field": "submit",
+      "positionClass": "position-end mt-3 col-md-12"
+    }
+  ]
+}

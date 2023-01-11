@@ -1,0 +1,44 @@
+[
+    {
+        "title": "settingMyProfileTitle",
+        "description": "settingMyProfileText",
+        "icon": "account_circle",
+        "link": "/dashboard/settings/owner-profile",
+        "rights": [
+            "owner"
+        ]
+    },
+    {
+        "title": "settingMyProfileTitle",
+        "description": "settingMyProfileText",
+        "icon": "account_circle",
+        "link": "/dashboard/settings/employee-profile",
+        "rights": [
+            "educator"
+        ]
+    },
+    {
+        "title": "settingPersonalizationTitle",
+        "description": "settingPersonalizationText",
+        "icon": "palette",
+        "link": "/dashboard/settings/personalize"
+    },
+    {
+        "title": "settingInfoAboutKindergardenTitle",
+        "description": "settingInfoAboutKindergardenText",
+        "icon": "info",
+        "link": "/dashboard/settings/kindergarden-profile",
+        "rights": [
+            "superadmin",
+            "director",
+            "owner"
+        ]
+    },
+    {
+        "title": "settingChangeLanguageTitle",
+        "description": "settingChangeLanguageText",
+        "icon": "lock",
+        "link": "/dashboard/settings/change-password",
+        "rights": ""
+    }
+]

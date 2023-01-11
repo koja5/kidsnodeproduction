@@ -1,0 +1,398 @@
+{
+    "pageSize": 10,
+    "width": "50%",
+    "request": {
+        "type": "GET",
+        "api": "/api/getChildrens",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "paging": {
+        "enable": true,
+        "settings": {
+            "pageSize": 10
+        }
+    },
+    "sorting": {
+        "enable": true
+    },
+    "grouping": {
+        "enable": true,
+        "group": []
+    },
+    "filtering": {
+        "enable": false
+    },
+    "customGrouping": false,
+    "allowResizing": true,
+    "reorderable": true,
+    "selectable": true,
+    "scrollable": false,
+    "hideable": true,
+    "refresh": false,
+    "reset": true,
+    "contextMenuItems": [
+        "AutoFit",
+        "AutoFitAll",
+        "SortAscending",
+        "SortDescending",
+        "Copy",
+        "Edit",
+        "Delete",
+        "Save",
+        "Cancel",
+        "FirstPage",
+        "PrevPage",
+        "LastPage",
+        "NextPage",
+        "Group",
+        "Ungroup"
+    ],
+    "toolbar": [
+        "Add",
+        "Edit",
+        "Delete",
+        "Print",
+        "Search"
+    ],
+    "editSettings": {
+        "allowEditing": true,
+        "allowAdding": true,
+        "allowDeleting": true,
+        "showDeleteConfirmDialog": true,
+        "mode": "Dialog"
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createChildren",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateChildren",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "delete": {
+            "type": "POST",
+            "api": "/api/deleteChildren",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "columns": [
+        {
+            "title": "ID",
+            "width": 70,
+            "filterable": true,
+            "hideable": true,
+            "filter": "date",
+            "type": "number",
+            "class": "text-align-right",
+            "field": "children_id",
+            "isPrimaryKey": true,
+            "allowEditing": false
+        },
+        {
+            "title": "firstname",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "children_firstname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "lastname",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "children_lastname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "birthday",
+            "filterable": true,
+            "hideable": true,
+            "type": "date",
+            "format": "dd.MM.yyyy",
+            "class": "text-align-right",
+            "field": "children_birthday",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "gender",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "children_gender",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "motherFirstname",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "mother_firstname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "fatherFirstname",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "father_firstname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "title": "",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "father_firstname",
+            "template": {
+                "type": "button",
+                "action": "open",
+                "class": "btn btn-none button-text-center button-action text-center",
+                "classIcon": "remove_red_eye",
+                "link": "dashboard/children/profile-children",
+                "parameters": [
+                    "children_id"
+                ]
+            }
+        }
+    ],
+    "config": [
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "childrenData",
+            "text": "pleaseInsertChildrenData"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "children_id",
+            "title": "ID",
+            "field": "children_id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "children_firstname",
+            "title": "firstname",
+            "field": "children_firstname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "children_lastname",
+            "title": "lastname",
+            "field": "children_lastname"
+        },
+        {
+            "type": "radio",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "children_gender",
+            "title": "gender",
+            "field": "children_gender",
+            "itemFields": [
+                {
+                    "title": "man",
+                    "value": "man"
+                },
+                {
+                    "title": "woman",
+                    "value": "femaly"
+                }
+            ]
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "children_birthday",
+            "title": "birthday",
+            "field": "children_birthday"
+        },
+        {
+            "type": "combobox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "kindergarden_subgroup_id",
+            "title": "kindergardenSubgroupName",
+            "field": {
+                "text": "name",
+                "value": "id"
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getKindergardenSubgroup",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "placeholder": "Please select kindergarden group",
+            "fieldConfig": {
+                "ignoreAccent": false,
+                "filter": true
+            },
+            "required": true
+        },
+        {
+            "type": "label",
+            "width": "col-md-12 border-top mt-3 pt-3",
+            "title": "childrenData",
+            "text": "pleaseInsertChildrenData"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "father_id",
+            "title": "ID",
+            "field": "father_id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "father_firstname",
+            "title": "firstname",
+            "field": "father_firstname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "father_lastname",
+            "title": "lastname",
+            "field": "father_lastname"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "father_birthday",
+            "title": "birthday",
+            "field": "father_birthday"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "father_telephone",
+            "title": "telephone",
+            "field": "father_telephone"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12 border-top mt-3 pt-3",
+            "title": "motherData",
+            "text": "pleaseInsertMotherData"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "mother_id",
+            "title": "ID",
+            "field": "mother_id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "mother_firstname",
+            "title": "firstname",
+            "field": "mother_firstname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "mother_lastname",
+            "title": "lastname",
+            "field": "mother_lastname"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "mother_birthday",
+            "title": "birthday",
+            "field": "mother_birthday"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "mother_telephone",
+            "title": "telephone",
+            "field": "mother_telephone"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-7",
+            "class": "e-outline",
+            "name": "mother_address",
+            "title": "address",
+            "field": "mother_address"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-2",
+            "class": "e-outline",
+            "name": "mother_zipCode",
+            "title": "zipCode",
+            "field": "mother_zipCode"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-3",
+            "class": "e-outline",
+            "name": "mother_city",
+            "title": "city",
+            "field": "mother_city"
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "e-info button-action",
+            "name": "submit",
+            "title": "saveButton",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

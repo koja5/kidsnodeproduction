@@ -1,0 +1,92 @@
+[
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>badge</mat-icon> Knjižica</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "forms",
+        "path": "/forms/children/medical-records",
+        "file": "health_card.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>medication</mat-icon> Opšte stanje</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "forms",
+        "path": "/forms/children/medical-records",
+        "file": "basic-condition.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>vaccines</mat-icon> Imunizacija</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "forms",
+        "path": "/forms/children/medical-records",
+        "file": "imunization.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>receipt</mat-icon> Sistematski pregledi</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/children/profile-children/medical-records",
+        "file": "control-review.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>control_point_duplicate</mat-icon> Kontrolni i ostali pregledi</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/children/profile-children/medical-records",
+        "file": "control-other-review.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>newspaper</mat-icon> Specijalistički pregledi</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/children/profile-children/medical-records",
+        "file": "special-review.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>balcony</mat-icon> Stomatološki pregledi</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/children/profile-children/medical-records",
+        "file": "dental-review.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>height</mat-icon> Merenje TT i TV</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/children/profile-children/medical-records",
+        "file": "weight-height-review.json"
+    },
+    {
+        "title": {
+            "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>text_snippet</mat-icon> Zapažanja</div>",
+            "class": "e-fill",
+            "headerStyle": "e-fill"
+        },
+        "type": "grid",
+        "path": "/grids/children/profile-children/medical-records",
+        "file": "observations.json"
+    }
+]

@@ -1,0 +1,193 @@
+{
+    "actionButtons": {
+        "class": "text-right pr-3 pl-3 pt-3 pb-0",
+        "simpleButtons": [],
+        "dropDownButtons": {
+            "content": "Opcije",
+            "items": [
+                {
+                    "text": "Uredi",
+                    "id": "edit",
+                    "iconCss": "ddb-icons e-edit"
+                }
+            ]
+        },
+        "splitButtons": {
+            "content": "",
+            "items": []
+        }
+    },
+    "request": {
+        "type": "GET",
+        "api": "/api/getMedicalRecordImunization/",
+        "url": [
+            "id"
+        ],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createMedicalRecordImunization",
+            "url": [
+                "id"
+            ],
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateMedicalRecordImunization",
+            "url": [
+                "id"
+            ],
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "config": [
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "bcg",
+            "title": "BCG",
+            "field": "bcg"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "mmrv",
+            "title": "MMR",
+            "field": "mmrv"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "dtp_first",
+            "title": "DTP prva doza",
+            "field": "dtp_first"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "opv_first",
+            "title": "OPV prva doza",
+            "field": "opv_first"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "dtp_two",
+            "title": "DTP druga doza",
+            "field": "dtp_two"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "opv_two",
+            "title": "OPV druga doza",
+            "field": "opv_two"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "dtp_three",
+            "title": "DTP treća doza",
+            "field": "dtp_three"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "opv_three",
+            "title": "OPV treća doza",
+            "field": "opv_three"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "dtp_r_first",
+            "title": "DTP prva revakcinacija",
+            "field": "dtp_r_first"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "opv_r_first",
+            "title": "OPV prva revakcinacija",
+            "field": "opv_r_first"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "dtp_r_two",
+            "title": "DTP druga revakcinacija",
+            "field": "dtp_r_two"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "opv_r_two",
+            "title": "OPV druga revakcinacija",
+            "field": "opv_r_two"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "pertussts_r",
+            "title": "Pertussts R.",
+            "field": "pertussts_r"
+        },
+        {
+            "type": "datepicker",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "hep_b",
+            "title": "HEP. B",
+            "field": "hep_b"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "multiline": true,
+            "name": "note",
+            "title": "Napomena",
+            "field": "note"
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "button-action e-info",
+            "name": "submit",
+            "title": "Sacuvaj",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12"
+        }
+    ]
+}

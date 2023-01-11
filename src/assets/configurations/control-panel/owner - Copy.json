@@ -1,0 +1,381 @@
+{
+    "widgets": [
+        {
+            "title": "controlPanelWidgetTotalNumberOfChildren",
+            "width": "col-md-3",
+            "name": "childrens",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getNumberOfChildrensInKindergarden",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "root": "",
+            "valueField": "number",
+            "icon": "child_care"
+        },
+        {
+            "title": "Ukupan broj zaposlenih",
+            "width": "col-md-3",
+            "name": "employees",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getNumberOfEmployeesInKindergarden",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "root": "",
+            "valueField": "number",
+            "icon": "business_center"
+        },
+        {
+            "title": "controlPanelWidgetActivity",
+            "width": "col-md-3",
+            "name": "activity",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getNumberOfChildrenActivityInKindergarden",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "root": "",
+            "valueField": "number",
+            "icon": "directions_run"
+        },
+        {
+            "title": "Saradnici",
+            "width": "col-md-3",
+            "name": "suppliers",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getNumberOfSuppliersInKindergarden",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "root": "",
+            "valueField": "number",
+            "icon": "people_outline"
+        },
+        {
+            "type": "complex",
+            "title": "controlPanelWidgetRecordOfChildrens",
+            "items": [
+                {
+                    "width": "col-md-6",
+                    "title": "controlPanelChildrenPresent",
+                    "valueField": "present",
+                    "name": "present"
+                },
+                {
+                    "width": "col-md-6",
+                    "title": "controlPanelChildrenAbsent",
+                    "valueField": "record_absense",
+                    "name": "record_absense"
+                }
+            ],
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrenRecordAbsenseForToday",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "buttons": [
+                {
+                    "title": "controlPanelButtonSeeArrivalRecords",
+                    "class": "button-action e-info e-control e-btn",
+                    "url": "/dashboard/children/records-of-arrivals"
+                }
+            ],
+            "width": "col-md-6",
+            "icon": "group"
+        },
+        {
+            "type": "complex",
+            "title": "controlPanelWidgetRecordOfEmployees",
+            "items": [
+                {
+                    "width": "col-md-6",
+                    "title": "controlPanelEmployeePresent",
+                    "valueField": "reporting_presence_employees",
+                    "name": "reporting_presence_employees"
+                },
+                {
+                    "width": "col-md-6",
+                    "title": "controlPanelEmployeeAbsent",
+                    "valueField": "absense",
+                    "name": "absense"
+                }
+            ],
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getEmployeeReportingPresenceForToday",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "buttons": [
+                {
+                    "title": "controlPanelButtonSeeArrivalEmployeeRecords",
+                    "class": "button-action e-info e-control e-btn",
+                    "url": "/dashboard/employee/reporting-presence"
+                }
+            ],
+            "width": "col-md-6",
+            "icon": "group"
+        }
+    ],
+    "charts": [
+        {
+            "type": "Pie",
+            "name": "controlPanelChartPlaceholderInformationAboutPayment",
+            "title": "controlPanelChartInvoicesForCurrentMonth",
+            "width": "col-md-4",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getInvoiceChildrenSumPaidUnpaid",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "name",
+            "yName": "value",
+            "tooltip": {
+                "enable": true,
+                "format": "${point.x}: <b>${point.y} dinara</b>"
+            },
+            "center": {
+                "x": "50%",
+                "y": "50%"
+            },
+            "startAngle": 0,
+            "endAngle": 360,
+            "explode": true,
+            "enableAnimation": false,
+            "dataLabel": {
+                "visible": true,
+                "position": "Inside",
+                "name": "text",
+                "font": {
+                    "fontWeight": "600"
+                }
+            },
+            "animation": {
+                "enable": false
+            },
+            "palette": [
+                "#52a318",
+                "#bc4825"
+            ]
+        },
+        {
+            "type": "Line",
+            "title": "controlPanelChartChildrenInLast7Days",
+            "width": "col-md-8",
+            "name": "Broj dolazaka dece u prethodnoj nedelji",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrenAbsenseForLast7Days",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "date",
+            "yName": "number",
+            "primaryXAxis": {
+                "valueType": "Category",
+                "interval": 1,
+                "majorGridLines": {
+                    "width": 0
+                }
+            },
+            "primaryYAxis": {
+                "labelFormat": "{value}"
+            },
+            "marker": {
+                "visible": true,
+                "height": 10,
+                "width": 10
+            },
+            "radius": {
+                "topLeft": 10,
+                "topRight": 10
+            },
+            "tooltip": {
+                "enable": true
+            },
+            "chartArea": {
+                "border": {
+                    "width": 0
+                }
+            },
+            "palette": [
+                "#1267ce"
+            ]
+        },
+        {
+            "type": "Pie",
+            "name": "controlPanelChartStatistic",
+            "title": "controlPanelChartInvoiceForCurrentMonthByInstallments",
+            "width": "col-md-4",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getInvoiceChildrenCountPaidUnpaid",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "name",
+            "yName": "value",
+            "tooltip": {
+                "enable": true,
+                "format": "${point.x}: <b>${point.y} rata</b>"
+            },
+            "center": {
+                "x": "50%",
+                "y": "50%"
+            },
+            "startAngle": 0,
+            "endAngle": 360,
+            "explode": true,
+            "enableAnimation": false,
+            "dataLabel": {
+                "visible": true,
+                "position": "Inside",
+                "name": "text",
+                "font": {
+                    "fontWeight": "600"
+                }
+            },
+            "animation": {
+                "enable": false
+            },
+            "palette": [
+                "#48b524",
+                "#E94649"
+            ]
+        },
+        {
+            "type": "Column",
+            "title": "controlPanelChartChildrenAbsentToday",
+            "width": "col-md-8",
+            "name": "controlPanelChartPlaceholderChildrenAbsent",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getRecordsOfArrivalByGroup",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "group",
+            "yName": "number",
+            "primaryXAxis": {
+                "valueType": "Category",
+                "interval": 1,
+                "majorGridLines": {
+                    "width": 0
+                }
+            },
+            "primaryYAxis": {
+                "labelFormat": "{value}",
+                "interval": 1
+            },
+            "marker": {
+                "dataLabel": {
+                    "visible": true,
+                    "position": "Top",
+                    "font": {
+                        "fontWeight": "600",
+                        "color": "#ffffff"
+                    }
+                }
+            },
+            "radius": {
+                "topLeft": 10,
+                "topRight": 10
+            },
+            "tooltip": {
+                "enable": true
+            },
+            "chartArea": {
+                "border": {
+                    "width": 0
+                }
+            },
+            "palette": [
+                "#bc8f14"
+            ]
+        },
+        {
+            "type": "Pie",
+            "name": "Broj dolazaka dece po danima",
+            "title": "Statistika 2",
+            "width": "col-md-4",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrenAbsenseForLast7Days",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "date",
+            "yName": "number",
+            "palette": [
+                "#E94649",
+                "#F6B53F",
+                "#6FAAB0",
+                "#C4C24A"
+            ]
+        },
+        {
+            "type": "Pie",
+            "name": "Broj dolazaka dece po danima",
+            "title": "Statistika 2",
+            "width": "col-md-4",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrenAbsenseForLast7Days",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "tooltip": {
+                "enable": true,
+                "format": "${point.x}: <b>${point.y} rata</b>"
+            },
+            "xName": "date",
+            "yName": "number",
+            "palette": [
+                "#E94649",
+                "#F6B53F",
+                "#6FAAB0",
+                "#C4C24A"
+            ]
+        },
+        {
+            "type": "Pie",
+            "name": "Broj dolazaka dece po danima",
+            "title": "Statistika 2",
+            "width": "col-md-4",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrenAbsenseForLast7Days",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "date",
+            "yName": "number",
+            "palette": [
+                "#E94649",
+                "#F6B53F",
+                "#6FAAB0",
+                "#C4C24A"
+            ]
+        }
+    ]
+}

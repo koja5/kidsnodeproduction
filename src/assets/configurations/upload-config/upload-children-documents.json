@@ -1,0 +1,9 @@
+{
+  "saveUrl": "http://localhost:3001/api/upload/saveChildrenDocument",
+  "removeUrl": "http://localhost:3001/api/upload/deleteChildrenDocument",
+  "requiredBaseData": true,
+  "autoUpload": false,
+  "url": [
+    "id"
+  ]
+}

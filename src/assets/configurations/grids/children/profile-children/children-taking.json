@@ -1,0 +1,249 @@
+{
+    "pageSize": 10,
+    "width": "50%",
+    "request": {
+      "type": "GET",
+      "api": "/api/getAllChildrenTakingByChildrenId",
+      "url": ["id"],
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "paging": {
+      "enable": true,
+      "settings": {
+        "pageSize": 10
+      }
+    },
+    "sorting": {
+      "enable": true
+    },
+    "grouping": {
+      "enable": true,
+      "group": []
+    },
+    "filtering": {
+      "enable": false
+    },
+    "customGrouping": false,
+    "allowResizing": true,
+    "reorderable": true,
+    "selectable": true,
+    "scrollable": false,
+    "hideable": true,
+    "refresh": false,
+    "reset": true,
+    "contextMenuItems": [
+      "AutoFit",
+      "AutoFitAll",
+      "SortAscending",
+      "SortDescending",
+      "Copy",
+      "Edit",
+      "Delete",
+      "Save",
+      "Cancel",
+      "FirstPage",
+      "PrevPage",
+      "LastPage",
+      "NextPage",
+      "Group",
+      "Ungroup"
+    ],
+    "toolbar": ["Add", "Edit", "Delete", "Print", "Search"],
+    "editSettings": {
+      "allowEditing": true,
+      "allowAdding": true,
+      "allowDeleting": true,
+      "showDeleteConfirmDialog": true,
+      "mode": "Dialog"
+    },
+    "editSettingsRequest": {
+      "add": {
+        "type": "POST",
+        "api": "/api/createChildrenTaking",
+        "url": ["id"],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+      },
+      "edit": {
+        "type": "POST",
+        "api": "/api/updateChildrenTaking",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+      },
+      "delete": {
+        "type": "POST",
+        "api": "/api/deleteChildrenTaking",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+      }
+    },
+    "columns": [
+      {
+        "title": "ID",
+        "width": 70,
+        "filterable": true,
+        "hideable": true,
+        "filter": "date",
+        "type": "number",
+        "class": "text-align-right",
+        "field": "id",
+        "isPrimaryKey": true,
+        "allowEditing": false
+      },
+      {
+        "title": "creationDate",
+        "filterable": true,
+        "hideable": true,
+        "type": "date",
+        "format": "dd.MM.yyyy",
+        "class": "text-align-right",
+        "field": "creation_date",
+        "validation": { "required": true }
+      },
+      {
+        "title": "firstname",
+        "filterable": true,
+        "hideable": true,
+        "type": "string",
+        "class": "text-align-right",
+        "field": "firstname",
+        "validation": { "required": true }
+      },
+      {
+        "title": "lastname",
+        "filterable": true,
+        "hideable": true,
+        "type": "string",
+        "class": "text-align-right",
+        "field": "lastname",
+        "validation": { "required": true }
+      },
+      {
+        "title": "telephone",
+        "filterable": true,
+        "hideable": true,
+        "type": "string",
+        "class": "text-align-right",
+        "field": "telephone",
+        "validation": { "required": true }
+      },
+      {
+        "title": "email",
+        "filterable": true,
+        "hideable": true,
+        "type": "string",
+        "class": "text-align-right",
+        "field": "email",
+        "validation": { "required": true }
+      },
+      {
+        "title": "childrenFamily",
+        "filterable": true,
+        "hideable": true,
+        "type": "string",
+        "class": "text-align-right",
+        "field": "children_family",
+        "validation": { "required": true }
+      },
+      {
+        "title": "idNumber",
+        "filterable": true,
+        "hideable": true,
+        "type": "string",
+        "class": "text-align-right",
+        "field": "id_number",
+        "validation": { "required": true }
+      }
+      
+    ],
+    "config": [
+      {
+        "type": "textbox",
+        "width": "col-md-12 hide",
+        "class": "e-outline",
+        "name": "id",
+        "title": "ID",
+        "field": "id",
+        "readonly": true
+      },
+      {
+        "type": "textbox",
+        "width": "col-md-6",
+        "class": "e-outline",
+        "name": "firstname",
+        "title": "firstname",
+        "field": "firstname"
+      },
+      {
+        "type": "textbox",
+        "width": "col-md-6",
+        "class": "e-outline",
+        "name": "lastname",
+        "title": "lastname",
+        "field": "lastname"
+      },
+      {
+        "type": "textbox",
+        "width": "col-md-6",
+        "class": "e-outline",
+        "name": "telephone",
+        "title": "telephone",
+        "field": "telephone"
+      },
+      {
+        "type": "textbox",
+        "width": "col-md-6",
+        "class": "e-outline",
+        "name": "email",
+        "title": "email",
+        "field": "email"
+      },
+      {
+        "type": "combobox",
+        "width": "col-md-6",
+        "class": "e-outline",
+        "name": "children_family",
+        "title": "childrenFamily",
+        "field": { "text": "name", "value": "id" },
+        "request": {
+          "type": "GET",
+          "api": "",
+          "parameters": [],
+          "fields": "",
+          "root": "",
+          "localData": {
+              "path": "enums",
+              "file": "children-family.json"
+          }
+        },
+        "fieldConfig": {
+          "ignoreAccent": false,
+          "filter": true
+        },
+        "required": true
+      },
+      {
+        "type": "textbox",
+        "width": "col-md-6",
+        "class": "e-outline",
+        "name": "id_number",
+        "title": "idNumber",
+        "field": "id_number"
+      },
+      {
+        "type": "button",
+        "width": "col-md-12",
+        "class": "button-action e-info",
+        "name": "submit",
+        "title": "saveButton",
+        "field": "submit",
+        "positionClass": "position-end mt-3 col-md-12"
+      }
+    ]
+  }
+  

@@ -1,0 +1,87 @@
+{
+  "request": {
+    "type": "GET",
+    "api": "/api/getCalendarOfChildrenActivity",
+    "parameters": [],
+    "fields": "",
+    "root": ""
+  },
+  "editSettingsRequest": {
+    "add": {
+      "type": "POST",
+      "api": "/api/createCalendarOfChildrenActivity",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "edit": {
+      "type": "POST",
+      "api": "/api/updateCalendarOfChildrenActivity",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "delete": {
+      "type": "POST",
+      "api": "/api/deleteCalendarOfChildrenActivity",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    }
+  },
+  "views": [
+    "WorkWeek",
+    "Day",
+    "Week",
+    "Month"
+  ],
+  "showQuickInfo": true,
+  "startHour": "08:00",
+  "endHour": "20:00",
+  "interval": 30,
+  "toolbar": {
+    "exportToExcel": true,
+    "print": true
+  },
+  "displayFieldForSubject": [
+    "title_of_activity",
+    "<br>",
+    "description_of_activity"
+  ],
+  "config": [
+    {
+      "type": "textbox",
+      "title": "title",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "name": "title_of_activity",
+      "schedule": true
+    },
+    {
+      "type": "textbox",
+      "title": "description",
+      "width": "col-md-12",
+      "class": "e-field e-input e-control e-textbox e-lib e-input e-outline",
+      "name": "description_of_activity",
+      "schedule": true
+    },
+    {
+      "type": "datetimepicker",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "title": "start",
+      "name": "StartTime",
+      "schedule": true
+    },
+    {
+      "type": "datetimepicker",
+      "width": "col-md-12",
+      "class": "e-outline",
+      "fieldClass": "e-field e-input",
+      "title": "end",
+      "name": "EndTime",
+      "schedule": true
+    }
+  ]
+}

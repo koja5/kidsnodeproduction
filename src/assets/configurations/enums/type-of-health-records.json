@@ -1,0 +1,42 @@
+[
+    {
+        "name": "vakcinacija",
+        "id": 0
+    },
+    {
+        "name": "vakcinacija 5 u 1",
+        "id": 1
+    },
+    {
+        "name": "vakcinacija 6 u 1",
+        "id": 2
+    },
+    {
+        "name": "bolest",
+        "id": 3
+    },
+    {
+        "name": "zarazna bolest",
+        "id": 4
+    },
+    {
+        "name": "hronicna bolest",
+        "id": 5
+    },
+    {
+        "name": "alergija",
+        "id": 6
+    },
+    {
+        "name": "poteskoce",
+        "id": 7
+    },
+    {
+        "name": "merenje",
+        "id": 8
+    },
+    {
+        "name": "beleska",
+        "id": 9
+    }
+]

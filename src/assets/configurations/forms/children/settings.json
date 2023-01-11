@@ -1,0 +1,82 @@
+{
+  "actionButtons": {
+    "class": "text-right p-3",
+    "simpleButtons": [],
+    "dropDownButtons": {
+      "content": "Opcije",
+      "items": [
+        {
+          "text": "Izmeni",
+          "id": "edit",
+          "iconCss": "ddb-icons e-edit"
+        }
+      ]
+    },
+    "splitButtons": {
+      "content": "",
+      "items": []
+    }
+  },
+  "request": {
+    "type": "GET",
+    "api": "/api/getChildrenSetting/",
+    "url": ["id"],
+    "parameters": [],
+    "fields": "",
+    "root": ""
+  },
+  "editSettingsRequest": {
+    "add": {
+      "type": "POST",
+      "api": "/api/createChildrenSetting",
+      "url": ["id"],
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    },
+    "edit": {
+      "type": "POST",
+      "api": "/api/updateChildrenSetting",
+      "parameters": [],
+      "fields": "",
+      "root": ""
+    }
+  },
+  "config": [
+    {
+      "type": "textbox",
+      "width": "col-md-12 hide",
+      "class": "e-outline",
+      "name": "id",
+      "title": "ID",
+      "field": "id",
+      "readonly": true
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-12 hide",
+      "class": "e-outline",
+      "name": "children_id",
+      "title": "children_id",
+      "field": "children_id",
+      "readonly": true
+    },
+    {
+      "type": "textbox",
+      "width": "col-md-6",
+      "class": "e-outline",
+      "name": "price",
+      "title": "monthlyPayment",
+      "field": "price"
+    },
+    {
+      "type": "button",
+      "width": "col-md-12",
+      "class": "e-info  button-action",
+      "name": "submit",
+      "title": "saveButton",
+      "field": "submit",
+      "positionClass": "position-end mt-3 col-md-12"
+    }
+  ]
+}

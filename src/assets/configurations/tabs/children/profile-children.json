@@ -1,0 +1,116 @@
+[
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>info</mat-icon> Osnovne informacije</div>",
+      "class": "e-fill",
+      "headerStyle": "e-fill"
+    },
+    "type": "forms",
+    "path": "/forms/children",
+    "file": "basic-information.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>family_restroom</mat-icon> Roditelji</div>"
+    },
+    "type": "forms",
+    "path": "/forms/children",
+    "file": "parents-information.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>house</mat-icon> Osobe za preuzimanje</div>"
+    },
+    "type": "grid",
+    "path": "/grids/children/profile-children",
+    "file": "children-taking.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>medical_services</mat-icon> Zdravstveni karton</div>"
+    },
+    "type": "tabs",
+    "path": "/tabs/children",
+    "file": "medical-record.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>description</mat-icon> Dokumentacija</div>"
+    },
+    "type": "grid",
+    "path": "/grids/children/profile-children",
+    "file": "documents.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>paid</mat-icon> Uplate</div>"
+    },
+    "type": "grid",
+    "path": "/grids/children/profile-children",
+    "file": "children-payment.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator",
+      "finance"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>note_alt</mat-icon> Napomene</div>"
+    },
+    "type": "grid",
+    "path": "/grids/children/profile-children",
+    "file": "children-notes.json",
+    "rights": [
+      "owner",
+      "director",
+      "educator"
+    ]
+  },
+  {
+    "title": {
+      "text": "<div class='center-text'><mat-icon class='mat-icon notranslate material-icons mat-icon-no-color mr-1'>settings</mat-icon> Podesavanja</div>"
+    },
+    "type": "forms",
+    "path": "/forms/children",
+    "file": "settings.json",
+    "rights": [
+      "owner",
+      "director"
+    ]
+  }
+]

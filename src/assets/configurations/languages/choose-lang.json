@@ -1,0 +1,40 @@
+[
+    {
+        "name": "serbia",
+<<<<<<< HEAD
+        "code": [
+            "RS"
+=======
+        "code": "RS",
+        "similarCode": [
+            "RS", "HR", "BA"
+>>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
+        ],
+        "flag": "serbia.png"
+    },
+    {
+        "name": "english",
+<<<<<<< HEAD
+        "code": [],
+=======
+        "code": "EN",
+        "similarCode": [
+            "EN"
+        ],
+>>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
+        "flag": "english.png"
+    },
+    {
+        "name": "germany",
+<<<<<<< HEAD
+        "code": [
+=======
+        "code": "DE",
+        "similarCode": [
+>>>>>>> 8186d28dd9fc9c9479a65ce6cdc25402d4da864b
+            "AT",
+            "DE"
+        ],
+        "flag": "germany.png"
+    }
+]

@@ -1,0 +1,136 @@
+{
+    "pageSize": 10,
+    "width": "50%",
+    "request": {
+        "type": "GET",
+        "api": "/api/upload/getGeneralContracts",
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "paging": {
+        "enable": true,
+        "settings": {
+            "pageSize": 10
+        }
+    },
+    "sorting": {
+        "enable": true
+    },
+    "grouping": {
+        "enable": true,
+        "group": []
+    },
+    "filtering": {
+        "enable": false
+    },
+    "customGrouping": false,
+    "allowResizing": true,
+    "reorderable": true,
+    "selectable": true,
+    "scrollable": false,
+    "hideable": true,
+    "refresh": false,
+    "reset": true,
+    "contextMenuItems": [
+        "AutoFit",
+        "AutoFitAll",
+        "SortAscending",
+        "SortDescending",
+        "Delete",
+        "Save",
+        "Cancel",
+        "FirstPage",
+        "PrevPage",
+        "LastPage",
+        "NextPage",
+        "Group",
+        "Ungroup"
+    ],
+    "toolbar": [
+        "Add",
+        "Delete",
+        "Print",
+        "Search"
+    ],
+    "editSettings": {
+        "allowEditing": false,
+        "allowAdding": true,
+        "allowDeleting": true,
+        "showDeleteConfirmDialog": true,
+        "mode": "Dialog"
+    },
+    "columns": [
+        {
+            "title": "ID",
+            "width": 70,
+            "filterable": true,
+            "hideable": true,
+            "filter": "date",
+            "type": "number",
+            "class": "text-align-right",
+            "field": "id",
+            "isPrimaryKey": true,
+            "allowEditing": false
+        },
+        {
+            "title": "nameOfDocument",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "name"
+        },
+        {
+            "title": "typeOfDocument",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "type",
+            "template": {
+                "type": "fileType",
+                "field": "type",
+                "class": "btn btn-none button-text-center button-action text-center"
+            }
+        },
+        {
+            "title": "",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "father_firstname",
+            "template": {
+                "type": "button",
+                "action": "previewDocument",
+                "field": "filename",
+                "class": "btn btn-none button-text-center button-action text-center",
+                "classIcon": "remove_red_eye"
+            }
+        },
+        {
+            "title": "",
+            "filterable": true,
+            "hideable": true,
+            "type": "string",
+            "class": "text-align-right",
+            "field": "father_firstname",
+            "template": {
+                "type": "button",
+                "action": "downloadDocument",
+                "field": "filename",
+                "class": "btn btn-none button-text-center button-action text-center",
+                "classIcon": "cloud_download"
+            }
+        }
+    ],
+    "uploadConfig": {
+        "path": "/upload-config",
+        "file": "upload-general-contracts.json",
+        "delete": {
+            "type": "POST",
+            "api": "/api/upload/deleteGeneralContract"
+        }
+    }
+}

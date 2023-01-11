@@ -1,0 +1,133 @@
+{
+    "request": {
+        "type": "GET",
+        "api": "/api/getWorkDiaryEmployeeById",
+        "parameters": [
+            "id"
+        ],
+        "fields": "",
+        "root": ""
+    },
+    "resources": {
+        "request": {
+            "type": "GET",
+            "api": "/api/getWorkStructureEmployee",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "field": "work_structure",
+        "idField": "id",
+        "colorField": "color",
+        "allowMultipleOwner": true
+    },
+    "editOptions": {
+        "allowAdding": false,
+        "allowEditing": false,
+        "allowDeleting": false
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createWorkDiaryEmployee",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateWorkDiaryEmployee",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "delete": {
+            "type": "POST",
+            "api": "/api/deleteWorkDiaryEmployee",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "views": [
+        "WorkWeek",
+        "Day",
+        "Week",
+        "Month"
+    ],
+    "showQuickInfo": true,
+    "startHour": "08:00",
+    "endHour": "18:00",
+    "interval": 15,
+    "toolbar": {
+        "exportToExcel": true,
+        "print": true
+    },
+    "tooltip": {
+        "display": true,
+        "openDelay": 1500,
+        "position": "TopCenter"
+    },
+    "convertSubmitValue": [
+        {
+            "field": "work_structure",
+            "type": "number"
+        }
+    ],
+    "displayFieldForSubject": [
+        "work_description"
+    ],
+    "config": [
+        {
+            "type": "combobox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "fieldClass": "e-field e-input",
+            "name": "work_structure",
+            "title": "Obrok",
+            "field": {
+                "text": "name",
+                "value": "id"
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getWorkStructureEmployee",
+                "fields": "",
+                "root": ""
+            },
+            "fieldConfig": {
+                "ignoreAccent": false,
+                "filter": true
+            },
+            "required": true,
+            "schedule": true
+        },
+        {
+            "type": "textbox",
+            "title": "description",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "work_description",
+            "schedule": true,
+            "multiline": true
+        },
+        {
+            "type": "datetimepicker",
+            "title": "Start",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "fieldClass": "e-field e-input",
+            "name": "StartTime",
+            "schedule": true
+        },
+        {
+            "type": "datetimepicker",
+            "title": "End",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "fieldClass": "e-field e-input",
+            "name": "EndTime",
+            "schedule": true
+        }
+    ]
+}

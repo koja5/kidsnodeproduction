@@ -1,0 +1,263 @@
+{
+    "childrens": [
+        {
+            "actionButtons": {
+                "class": "text-right pr-3 pl-3 pt-3 pb-0",
+                "simpleButtons": [],
+                "dropDownButtons": {
+                    "content": "Opcije",
+                    "items": [
+                        {
+                            "text": "Uredi",
+                            "id": "edit",
+                            "iconCss": "ddb-icons e-edit"
+                        },
+                        {
+                            "text": "Obriši",
+                            "id": "delete",
+                            "iconCss": "ddb-icons e-remove"
+                        }
+                    ]
+                },
+                "splitButtons": {
+                    "content": "",
+                    "items": []
+                }
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getChildrenById/",
+                "url": [
+                    "id"
+                ],
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "editSettingsRequest": {
+                "add": {
+                    "type": "POST",
+                    "api": "/api/createEmployee",
+                    "parameters": [],
+                    "fields": "",
+                    "root": ""
+                },
+                "edit": {
+                    "type": "POST",
+                    "api": "/api/updateEmployee",
+                    "parameters": [],
+                    "fields": "",
+                    "root": ""
+                },
+                "delete": {
+                    "type": "POST",
+                    "api": "/api/deleteEmployee",
+                    "parameters": [],
+                    "fields": "",
+                    "root": ""
+                }
+            },
+            "config": [
+                {
+                    "type": "label",
+                    "width": "col-md-12 pt-2",
+                    "title": "Podaci o detetu",
+                    "text": "Molimo unesite neke osnovne podatke o detetu"
+                },
+                {
+                    "type": "textbox",
+                    "width": "col-md-12 hide",
+                    "class": "e-outline",
+                    "name": "id",
+                    "title": "ID",
+                    "field": "id",
+                    "readonly": true
+                },
+                {
+                    "type": "textbox",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "firstname",
+                    "title": "Firstname",
+                    "field": "firstname"
+                },
+                {
+                    "type": "textbox",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "lastname",
+                    "title": "Lastname",
+                    "field": "lastname"
+                },
+                {
+                    "type": "radio",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "gender",
+                    "title": "Gender",
+                    "field": "gender",
+                    "itemFields": [
+                        {
+                            "title": "Muski",
+                            "value": "man"
+                        },
+                        {
+                            "title": "Zenski",
+                            "value": "femaly"
+                        }
+                    ]
+                },
+                {
+                    "type": "datepicker",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "birthday",
+                    "title": "Birthday",
+                    "field": "birthday"
+                },
+                {
+                    "type": "combobox",
+                    "width": "col-md-12",
+                    "class": "e-outline mb-3",
+                    "name": "kindergarden_subgroup_id",
+                    "title": "Kindergarden subgroup",
+                    "field": {
+                        "text": "name",
+                        "value": "id"
+                    },
+                    "request": {
+                        "type": "GET",
+                        "api": "/api/getKindergardenSubgroup",
+                        "parameters": [],
+                        "fields": "",
+                        "root": ""
+                    },
+                    "placeholder": "Please select kindergarden group",
+                    "fieldConfig": {
+                        "ignoreAccent": false,
+                        "filter": true
+                    },
+                    "required": true
+                }
+            ]
+        },
+        {
+            "actionButtons": {
+                "class": "text-right border-top pr-3 pl-3 pt-3 pb-0",
+                "simpleButtons": [],
+                "dropDownButtons": {
+                    "content": "Opcije",
+                    "items": [
+                        {
+                            "text": "Uredi",
+                            "id": "edit",
+                            "iconCss": "ddb-icons e-edit"
+                        },
+                        {
+                            "text": "Obriši",
+                            "id": "delete",
+                            "iconCss": "ddb-icons e-remove"
+                        }
+                    ]
+                },
+                "splitButtons": {
+                    "content": "",
+                    "items": []
+                }
+            },
+            "request": {
+                "type": "GET",
+                "api": "/api/getChildrenById/",
+                "url": [
+                    "id"
+                ],
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "config": [
+                {
+                    "type": "label",
+                    "width": "col-md-12",
+                    "title": "Podaci o detetu",
+                    "text": "Molimo unesite neke osnovne podatke o detetu"
+                },
+                {
+                    "type": "textbox",
+                    "width": "col-md-12 hide",
+                    "class": "e-outline",
+                    "name": "id",
+                    "title": "ID",
+                    "field": "id",
+                    "readonly": true
+                },
+                {
+                    "type": "textbox",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "firstname",
+                    "title": "Firstname",
+                    "field": "firstname"
+                },
+                {
+                    "type": "textbox",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "lastname",
+                    "title": "Lastname",
+                    "field": "lastname"
+                },
+                {
+                    "type": "radio",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "gender",
+                    "title": "Gender",
+                    "field": "gender",
+                    "itemFields": [
+                        {
+                            "title": "Muski",
+                            "value": "man"
+                        },
+                        {
+                            "title": "Zenski",
+                            "value": "femaly"
+                        }
+                    ]
+                },
+                {
+                    "type": "datepicker",
+                    "width": "col-md-6",
+                    "class": "e-outline",
+                    "name": "birthday",
+                    "title": "Birthday",
+                    "field": "birthday"
+                },
+                {
+                    "type": "combobox",
+                    "width": "col-md-12",
+                    "class": "e-outline",
+                    "name": "kindergarden_subgroup_id",
+                    "title": "Kindergarden subgroup",
+                    "field": {
+                        "text": "name",
+                        "value": "id"
+                    },
+                    "request": {
+                        "type": "GET",
+                        "api": "/api/getKindergardenSubgroup",
+                        "parameters": [],
+                        "fields": "",
+                        "root": ""
+                    },
+                    "placeholder": "Please select kindergarden group",
+                    "fieldConfig": {
+                        "ignoreAccent": false,
+                        "filter": true
+                    },
+                    "required": true
+                }
+            ]
+        }
+    ]
+}

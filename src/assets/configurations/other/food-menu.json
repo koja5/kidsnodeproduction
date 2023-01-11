@@ -1,0 +1,581 @@
+[
+    {
+        "id": "",
+        "class": "col-sm-2 header",
+        "label": "Dan u nedelji"
+    },
+    {
+        "id": "",
+        "class": "col-sm-3 header",
+        "label": "Dorucak"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 header",
+        "label": "Užina"
+    },
+    {
+        "id": "",
+        "class": "col-sm-3 header",
+        "label": "Ručak"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 header",
+        "label": "Užina"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2",
+        "label": "Ponedeljak"
+    },
+    {
+        "type": "multiselect",
+        "id": "breakfastMonday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackOneMonday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "lunchMonday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackTwoMonday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2",
+        "label": "Utorak"
+    },
+    {
+        "type": "multiselect",
+        "id": "breakfastTuesday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackOneTuesday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "lunchTuesday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackTwoTuesday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2",
+        "label": "Sreda"
+    },
+    {
+        "type": "multiselect",
+        "id": "breakfastWednesday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackOneWednesday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "lunchWednesday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackTwoWednesday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2",
+        "label": "Četvrtak"
+    },
+    {
+        "type": "multiselect",
+        "id": "breakfastThursday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackOneThursday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "lunchThursday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackTwoThursday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2",
+        "label": "Petak"
+    },
+    {
+        "type": "multiselect",
+        "id": "breakfastFriday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackOneFriday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "lunchFriday",
+        "class": "col-sm-3 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "type": "multiselect",
+        "id": "snackTwoFriday",
+        "class": "col-sm-2 cell pt-2 pb-2",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header border-bottom-none",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-1 cell pt-2 pb-2 header border-bottom-none",
+        "label": "KJ"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header",
+        "label": "Belančevine"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header",
+        "label": "Masti"
+    },
+    {
+        "id": "",
+        "class": "col-sm-1 cell pt-2 pb-2 header border-bottom-none",
+        "label": "Ugljeni hidrati"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header",
+        "label": "Minerali"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header",
+        "label": "Vitamini"
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header border-top-none",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-1 cell pt-2 pb-2 header border-top-none",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "bilj."
+            },
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "živ."
+            },
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "ukupno"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "bilj."
+            },
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "živ."
+            },
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "ukupno"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-1 cell pt-2 pb-2 header border-top-none",
+        "label": ""
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "",
+                "class": "col-sm-6 pt-2 pb-2 header-dark",
+                "label": "kalcijum"
+            },
+            {
+                "id": "",
+                "class": "col-sm-6 pt-2 pb-2 header-dark",
+                "label": "gvožđe"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "",
+                "class": "col-sm-2 pt-2 pb-2 header-dark",
+                "label": "A"
+            },
+            {
+                "id": "",
+                "class": "col-sm-2 pt-2 pb-2 header-dark",
+                "label": "B1"
+            },
+            {
+                "id": "",
+                "class": "col-sm-2 pt-2 pb-2 header-dark",
+                "label": "B2"
+            },
+            {
+                "id": "",
+                "class": "col-sm-2 pt-2 pb-2 header-dark",
+                "label": "C"
+            },
+            {
+                "id": "",
+                "class": "col-sm-4 pt-2 pb-2 header-dark",
+                "label": "nijacin"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header",
+        "label": "Jaslice"
+    },
+    {
+        "id": "",
+        "type": "numeric",
+        "class": "col-sm-1 cell",
+        "group": [
+            {
+                "id": "cribKJ",
+                "type": "numeric",
+                "class": "col-sm-12"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "cribProteinPlants",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribProteinAnimal",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribProteinSum",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "cribFatPlants",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribFatAnimal",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribFatSum",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "type": "numeric",
+        "class": "col-sm-1 cell",
+        "group": [
+            {
+                "id": "cribCarbohydrates",
+                "type": "numeric",
+                "class": "col-sm-12"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "cribCalcium",
+                "type": "numeric",
+                "class": "col-sm-6 pb-2 pt-2"
+            },
+            {
+                "id": "cribIron",
+                "type": "numeric",
+                "class": "col-sm-6 pb-2 pt-2"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "cribA",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribB1",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribB2",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribC",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "cribNiacin",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell pt-2 pb-2 header",
+        "label": "Vrtić"
+    },
+    {
+        "id": "",
+        "type": "numeric",
+        "class": "col-sm-1 cell",
+        "group": [
+            {
+                "id": "kindergardenKJ",
+                "type": "numeric",
+                "class": "col-sm-12"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "kindergardenProteinPlants",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenProteinAnimal",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenProteinSum",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "kindergardenFatPlants",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenFatAnimal",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenFatSum",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "type": "numeric",
+        "class": "col-sm-1 cell",
+        "group": [
+            {
+                "id": "kindergardenCarbohydrates",
+                "type": "numeric",
+                "class": "col-sm-12"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "kindergardenCalcium",
+                "type": "numeric",
+                "class": "col-sm-6 pb-2 pt-2"
+            },
+            {
+                "id": "kindergardenIron",
+                "type": "numeric",
+                "class": "col-sm-6 pb-2 pt-2"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "class": "col-sm-2 cell",
+        "label": "",
+        "group": [
+            {
+                "id": "kindergardenA",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenB1",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenB2",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenC",
+                "type": "numeric",
+                "class": "col-sm-2 pb-2 pt-2",
+                "label": ""
+            },
+            {
+                "id": "kindergardenNiacin",
+                "type": "numeric",
+                "class": "col-sm-4 pb-2 pt-2",
+                "label": ""
+            }
+        ]
+    }
+]
