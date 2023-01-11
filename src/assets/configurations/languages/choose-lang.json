@@ -1,17 +1,14 @@
 [
     {
         "name": "serbia",
-        "code": [
-            "RS"
         "code": "RS",
         "similarCode": [
-            "RS", "HR", "BA"
+            "RS"
         ],
         "flag": "serbia.png"
     },
     {
         "name": "english",
-        "code": [],
         "code": "EN",
         "similarCode": [
             "EN"
@@ -20,7 +17,6 @@
     },
     {
         "name": "germany",
-        "code": [
         "code": "DE",
         "similarCode": [
             "AT",
